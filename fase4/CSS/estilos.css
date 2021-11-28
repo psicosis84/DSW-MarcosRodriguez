@@ -1,0 +1,116 @@
+
+
+/* TÍTULO DE PÁGINA ENCABEZADO  */
+header{
+    background-color:   #C2B092;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* SECTION */
+section{
+    background-color: #D9CAB3;
+    grid-column: 1/4;
+}
+
+/* TITULOS */
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 35px;
+}
+
+h4{
+    font-size: 30px;
+}
+
+p{
+    font-size: 21px;
+}
+
+li{
+    font-size: 21px;
+}
+
+.cita{
+    font-size: 13px;
+    font-family:Georgia;
+}
+
+/* BODY */
+body{
+    background-color: #C2B092;
+}
+
+/* ASIDE */
+aside{
+    background-color:#C2B092;
+    grid-column: 4/5;
+}
+
+/* MAIN */
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* MENU */
+.navegacion{
+    width: 1000px;
+    margin: 30px auto;
+    background-color: #986D8E;
+    color: white;
+}
+.navegacion ul{
+    list-style: none;
+}
+.menu > li {
+    position:relative;
+    display: inline-block;
+}
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+    
+
+}
+.menu > li > a:hover{
+    color: rgb(202, 59, 59);
+    transition: all .3s;
+}
+.submenu {
+    position: absolute;
+    background-color: #986D8E;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.submenu li a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 20px;
+    
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* FOOTER */
+footer{
+    background-color: greenyellow;
+}
+.piepagina{
+    font-size: 15px;
+}
